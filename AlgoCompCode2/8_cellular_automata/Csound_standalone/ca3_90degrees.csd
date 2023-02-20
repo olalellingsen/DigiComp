@@ -13,9 +13,9 @@ nchnls = 2
 #include "cellular_utilities.inc"
 
 ; set up initial population of cells
-gisize = 8
+gisize = 10
 giCells[] init gisize ; the array contining the population of cells
-giCells[1] = 1 ; set one to be alive at start
+giCells[5] = 1 ; set one to be alive at start
 
 giScaleMelodi[] fillarray 23, 26, 30 ; a melodic scale to use
 giScaleKomp[] fillarray 0, 7, 14, 16 ; a melodic scale to use
@@ -115,32 +115,37 @@ endin
 i2 0 1 30 ; make rule array
 i4 0 1 ; print cells before we start running anything
 
-;        tempo amp note pan
+;            tempo amp note pan
 
 ;A
-i10 0  20  1       -20  50  0.5 
-i11 5  5   1       -20  50  0.9
-i11 15 5   1       -20  50  0.1
+i10 0  20  1     -25  45  0.5 
+i11 5  5   1     -30  45  0.9
+i11 15 5   1     -30  45  0.1
 
-i10 20 20  1       -20  50  0.5 
-i11 25 5  [4/5]    -20  50  0.9
-i11 35 5  [5/4]    -20  50  0.1
+i10 20 20  1     -20  45  0.5 
+i11 25 5  [4/5]  -25  45  0.9
+i11 35 7  [5/4]  -25  48  0.1
 
 
 ;B
-i10 40 20 [5/4]    -20  54  0.5 
-i11 45 5  [5/5]    -20  54  0.9
-i11 55 5  [6/5]    -20  54  0.1
+i10 40 20 [5/4]  -18  48  0.5 
+i11 45 5  [5/5]  -25  48  0.9
+i11 55 7  [6/5]  -25  49  0.1
 
-;C
-i10 60 20 [10/3]   -20  51  0.5 
-i11 65 5  [10/3]   -20  51 0.5
-i11 75 5  [10/3]   -20  51 0.5
+i10 60 20 [6/5]  -20  49  0.5 
+i11 65 5  [6/3]  -25  49  0.9
+i11 75 3  [6/4]  -25  49  0.1
+i11 78 5  [6/4]  -28  46  0.5
+
+i10 80 30 [8/3]  -15  46  0.5 
+i11 90 5  [8/5]  -25  46  0.1
+i11 102 5 [8/4]  -25  46  0.9
+i11 107 8  3     -25  45 0.9
 
 ;A
-i10 80 20 3    -20  50  0.5 
-i11 85 5 4    -20  50 0.5
-i11 95 5 4    -20  50  0.5
+i10 110 20 3     -20  45  0.5 
+i11 115 5  3     -20  45  0.5
+i11 125 5 [10/3] -20  45  0.5
 
 
 </CsScore>
