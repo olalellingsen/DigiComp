@@ -1,5 +1,6 @@
 <CsoundSynthesizer>
 <CsOptions>
+-odac
 </CsOptions>
 <CsInstruments>
 
@@ -16,7 +17,7 @@ gisize = 32
 giCells[] init gisize ; the array contining the population of cells
 giCells[16] = 1 ; set one to be alive at start
 gkIntervals[] init gisize ; array to hold melodic intervals, updated by cell values
-giScale[] fillarray 0, 3, 5, 7, 10 ; a melodic scale to use
+giScale[] fillarray 0, 1, 4, 6, 8, 11, 13 ; a melodic scale to use
 
 ; make binary rule array
 instr 2
